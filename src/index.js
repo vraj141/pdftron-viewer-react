@@ -5,27 +5,65 @@ import './index.css';
 
 import React, { useRef, useEffect} from 'react';
 import WebViewer from '@pdftron/webviewer';
-// import './App.css';
 
+// import './App.css';
+ 
+
+ 
  
 const PdfApp =()=>{
 
-  const viewer = useRef(null);
+
+ 
+
+  // const viewer = useRef(null);
+  const viewer = React.createRef();
+
+  const showSignaturePanel=async()=> {
+    if (viewer.current.querySelector('iframe').contentDocument)
+      
+      console.log("Hiiiii");
+     // toolbarGroup-Insert
+
+      viewer.current.querySelector('iframe').contentDocument.querySelector(
+        'button[data-element="toolbarGroup-Insert"]'
+      ).click();
+
+      // viewer.current.querySelector('iframe').contentDocument.querySelector(
+      //   'div[data-element="signatureToolGroupButton"]'
+      // ).firstChild.click();
+
+       viewer.current.querySelector('iframe').contentDocument.querySelector(
+         'div[data-element="toolsOverlay"]'
+       ).firstChild.firstChild.firstChild.firstChild.firstChild.click() ;
+
+
+    //  console.log( viewer.current.querySelector('iframe').contentDocument.querySelector(
+    //     'div[data-element="toolsOverlay"]'
+    //   )) ;
+  }
+
+   
+  
+
   useEffect(() => {
+
+    
     
     WebViewer(
       {
         path: '/webviewer/lib',
-        initialDoc: 'https://www.eurofound.europa.eu/sites/default/files/ef_publication/field_ef_document/ef1710en.pdf',
+        initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/demo-annotated.pdf',
       },  
       viewer.current,
     ).then((instance) => {
       instance.setTheme('light');
       const { docViewer, Annotations ,   CoreControls} = instance;
       const annotManager = docViewer.getAnnotationManager();
-      /////////////////////////////////////////
+ 
 
-        // Added download button in header
+
+  
   instance.setHeaderItems(header => {
     header.push({
         type: 'actionButton',
@@ -45,10 +83,11 @@ const PdfApp =()=>{
         }
     });
   });
+  
 
     ///disabled unuseful elements in tool bar
 instance.disableElements(['zoomInButton','zoomOutButton','zoomOverlayButton','startFormEditingToolGroupButton','cropToolGroupButton','printButton','eraserToolButton','themeChangeButton','fullscreenButton','eraserToolButton','redoButton','undoButton','calloutToolGroupButton','fileAttachmentToolGroupButton','fileAttachmentToolGroupButton','stampToolGroupButton','rubberStampToolGroupButton','leftPanelButton','viewControlsButton','zoomOverlay','panToolButton','textSelectButton','selectToolButton','searchButton','toggleNotesButton','toolbarGroup-Annotate','toolbarGroup-Shapes','toolbarGroup-Edit','toolbarGroup-Annotate','menuButton']);
-   //added save button in header toolbar
+
   
        instance.setHeaderItems(header => {
         header.push({
@@ -81,10 +120,13 @@ instance.disableElements(['zoomInButton','zoomOutButton','zoomOverlayButton','st
  
   return(
       <>
+    <>
     
+    </>
     <div className="App">
       
       <div className="webviewer" ref={viewer}></div>
+      {/* <button onClick={showSignaturePanel}>E-sign</button>  */}
     </div>
        
     
@@ -94,3 +136,5 @@ instance.disableElements(['zoomInButton','zoomOutButton','zoomOverlayButton','st
 };
  
 ReactDOM.render(<><PdfApp/></>, document.getElementById('root'));
+
+

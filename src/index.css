@@ -33,7 +33,7 @@ html, body, #root {
 .webviewer {
   /* height:fit-content ;
   width: fit-content; */
-  /*  */height: 630px;
+  /*  */height: 100%;
   /* width: auto; */
   -webkit-box-shadow: 1px 1px 10px rgb(72, 173, 89);
           box-shadow: 1px 1px 10px rgb(36, 122, 43);
