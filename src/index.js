@@ -5,6 +5,10 @@ import './index.css';
 
 import React, { useRef, useEffect} from 'react';
 import WebViewer from '@pdftron/webviewer';
+import Button from '@material-ui/core/Button';
+ 
+
+import CreateRoundedIcon from '@material-ui/icons/CreateRounded';
 
 // import './App.css';
  
@@ -126,7 +130,10 @@ instance.disableElements(['zoomInButton','zoomOutButton','zoomOverlayButton','st
     <div className="App">
       
       <div className="webviewer" ref={viewer}></div>
-      {/* <button onClick={showSignaturePanel}>E-sign</button>  */}
+    {/* <button onClick={showSignaturePanel}>E-sign</button>  */}
+{/*      
+      <Button className="btn-style"  onClick={showSignaturePanel} ><CreateRoundedIcon/>E-sign</Button> */}
+
     </div>
        
     
