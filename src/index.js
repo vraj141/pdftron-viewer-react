@@ -131,8 +131,8 @@ instance.disableElements(['zoomInButton','zoomOutButton','zoomOverlayButton','st
       
       <div className="webviewer" ref={viewer}></div>
     {/* <button onClick={showSignaturePanel}>E-sign</button>  */}
-{/*      
-      <Button className="btn-style"  onClick={showSignaturePanel} ><CreateRoundedIcon/>E-sign</Button> */}
+     
+//       <Button  ><CreateRoundedIcon className="btn "onClick={showSignaturePanel}/></Button>
 
     </div>
        
