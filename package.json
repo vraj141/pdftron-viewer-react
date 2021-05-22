@@ -1,9 +1,11 @@
 {
-   
+  "homepage": "http://vraj141.github.io/pdftron-viewer-react",
   "name": "webviewer-react-sample",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
     "@pdftron/collab-server": "^1.0.2",
     "@pdftron/webviewer": "^7.0.0",
     "firebase": "^8.4.3",

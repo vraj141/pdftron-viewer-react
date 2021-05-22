@@ -47,3 +47,25 @@ html, body, #root {
   width: fit-content;
   }
 }
+.btn{
+  background-color: blue;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: float;
+  font-size: 16px;
+  margin-left: 50%;
+  position: absolute !important;
+  top: 725px !important;
+  left: 250px !important;
+  
+   
+}
+.btn1{
+  position: absolute !important;
+  top:30px !important ;
+  left: -50px !important;
+} 

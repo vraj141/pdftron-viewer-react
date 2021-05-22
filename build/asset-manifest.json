@@ -1,13 +1,13 @@
 {
-  "main.css": "/pdftron-integrate/static/css/main.7e0dfc20.chunk.css",
-  "main.js": "/pdftron-integrate/static/js/main.d71da1ed.chunk.js",
-  "main.js.map": "/pdftron-integrate/static/js/main.d71da1ed.chunk.js.map",
-  "static/js/1.5d60e93f.chunk.js": "/pdftron-integrate/static/js/1.5d60e93f.chunk.js",
-  "static/js/1.5d60e93f.chunk.js.map": "/pdftron-integrate/static/js/1.5d60e93f.chunk.js.map",
-  "runtime~main.js": "/pdftron-integrate/static/js/runtime~main.5bf1d612.js",
-  "runtime~main.js.map": "/pdftron-integrate/static/js/runtime~main.5bf1d612.js.map",
-  "static/css/main.7e0dfc20.chunk.css.map": "/pdftron-integrate/static/css/main.7e0dfc20.chunk.css.map",
-  "index.html": "/pdftron-integrate/index.html",
-  "precache-manifest.a29f9b8c3df9a8037c55f87c55363780.js": "/pdftron-integrate/precache-manifest.a29f9b8c3df9a8037c55f87c55363780.js",
-  "service-worker.js": "/pdftron-integrate/service-worker.js"
+  "main.css": "/pdftron-viewer-react/static/css/main.8cd34642.chunk.css",
+  "main.js": "/pdftron-viewer-react/static/js/main.844d21d5.chunk.js",
+  "main.js.map": "/pdftron-viewer-react/static/js/main.844d21d5.chunk.js.map",
+  "static/js/1.5d60e93f.chunk.js": "/pdftron-viewer-react/static/js/1.5d60e93f.chunk.js",
+  "static/js/1.5d60e93f.chunk.js.map": "/pdftron-viewer-react/static/js/1.5d60e93f.chunk.js.map",
+  "runtime~main.js": "/pdftron-viewer-react/static/js/runtime~main.65bc4df7.js",
+  "runtime~main.js.map": "/pdftron-viewer-react/static/js/runtime~main.65bc4df7.js.map",
+  "static/css/main.8cd34642.chunk.css.map": "/pdftron-viewer-react/static/css/main.8cd34642.chunk.css.map",
+  "index.html": "/pdftron-viewer-react/index.html",
+  "precache-manifest.5445378ddd8535d0ea0ed4df07940cef.js": "/pdftron-viewer-react/precache-manifest.5445378ddd8535d0ea0ed4df07940cef.js",
+  "service-worker.js": "/pdftron-viewer-react/service-worker.js"
 }

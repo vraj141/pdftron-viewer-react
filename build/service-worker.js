@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/pdftron-integrate/precache-manifest.a29f9b8c3df9a8037c55f87c55363780.js"
+  "/pdftron-viewer-react/precache-manifest.5445378ddd8535d0ea0ed4df07940cef.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/pdftron-integrate/index.html", {
+workbox.routing.registerNavigationRoute("/pdftron-viewer-react/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
